@@ -25,7 +25,7 @@ function draw() {
  
 
 
-  if(HasCollided(bullet, wall)){
+  if(camelCase(bullet, wall)){
     bullet.velocityX=0;
     var damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
      
@@ -41,7 +41,7 @@ function draw() {
   drawSprites();
   }
 
-function HasCollided(bullet, wall){
+function camelCase(bullet, wall){
 
   bulletRightEdge=bullet.x+bullet.width;
   wallLeftEdge=wall.x;
